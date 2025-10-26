@@ -65,7 +65,7 @@
 
 /* ============= hero section ============= */
 .hero{
- background-image: url(img/hero4.png);
+ background-image: url(../img/hero4.png);
  background-repeat: no-repeat;
  background-size: cover;
  height: 100vh;
