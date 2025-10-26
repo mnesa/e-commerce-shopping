@@ -151,7 +151,7 @@
 
 /* =========== banner01 section ======== */
 .banner01{
-    background: url(img/banner/banner02.jpg) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/banner/banner02.jpg") no-repeat center center/cover;
 }
 .banner01 .content{
     color: var(--white-color);
@@ -162,10 +162,10 @@
 }
 /* ============== banner02 section ============= */
 .banner02 .banner {
-    background: url(img/banner/banner0217.jpg) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/banner/banner0217.jpg") no-repeat center center/cover;
 }
 .banner02 .banner:nth-child(2){
-    background: url(img/banner/banner10.jpg) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/banner/banner10.jpg") no-repeat center center/cover;
 }
 .banner02 .banner:hover .btn{
     background: var(--primary-color);
@@ -183,13 +183,13 @@ font-weight: 500;
     text-transform: uppercase;
 }
 .banner03 .banner:nth-child(1){
- background: url(img/banner/banner07.jpg) no-repeat center center/cover;
+ background: url("/e-commerce-shopping/img/banner/banner07.jpg") no-repeat center center/cover;
 }
 .banner03 .banner:nth-child(2){
- background: url(img/banner/banner04.jpg) no-repeat center center/cover;
+ background: url("/e-commerce-shopping/img/banner/banner04.jpg") no-repeat center center/cover;
 }
 .banner03 .banner:nth-child(3){
- background: url(img/banner/banner18.jpg) no-repeat center center/cover;
+ background: url("/e-commerce-shopping/img/banner/banner18.jpg") no-repeat center center/cover;
 }
 /* ============== Newsletters section =============== */
 .newsletters{
@@ -269,11 +269,11 @@ color: var(--color);
 
 /* ============== shop page ======== */
 .shop-hero{
-    background: url(/img/banner/banner01.jpg) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/banner/banner01.jpg") no-repeat center center/cover;
 }
 /* =========== blog page ============ */
 .blog-page{
-    background: url(/img/banner/banner19.jpg) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/banner/banner19.jpg") no-repeat center center/cover;
 }
 .blog .card{
     position: relative;
@@ -328,7 +328,7 @@ color: var(--color);
 }
 /* ================= about page ================ */
 .about-page{
-    background: url(/img/about/banner.png) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/about/banner.png") no-repeat center center/cover;
 }
 .about .content.flex{
     flex-direction: column;
@@ -367,7 +367,7 @@ color: var(--color);
 
 /* ============ contact page ============== */
 .contact-page{
-    background: url(/img/about/banner.png) no-repeat center center/cover;
+    background: url("/e-commerce-shopping/img/about/banner.png") no-repeat center center/cover;
 }
 .contact h5{
      margin-block-start: 1rem;
