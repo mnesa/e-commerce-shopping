@@ -65,7 +65,7 @@
 
 /* ============= hero section ============= */
 .hero{
- background-image: url(/img/hero4.png);
+ background-image: url(img/hero4.png);
  background-repeat: no-repeat;
  background-size: cover;
  height: 100vh;
@@ -151,7 +151,7 @@
 
 /* =========== banner01 section ======== */
 .banner01{
-    background: url(/img/banner/banner02.jpg) no-repeat center center/cover;
+    background: url(img/banner/banner02.jpg) no-repeat center center/cover;
 }
 .banner01 .content{
     color: var(--white-color);
@@ -162,10 +162,10 @@
 }
 /* ============== banner02 section ============= */
 .banner02 .banner {
-    background: url(/img/banner/banner0217.jpg) no-repeat center center/cover;
+    background: url(img/banner/banner0217.jpg) no-repeat center center/cover;
 }
 .banner02 .banner:nth-child(2){
-    background: url(/img/banner/banner10.jpg) no-repeat center center/cover;
+    background: url(img/banner/banner10.jpg) no-repeat center center/cover;
 }
 .banner02 .banner:hover .btn{
     background: var(--primary-color);
@@ -183,13 +183,13 @@ font-weight: 500;
     text-transform: uppercase;
 }
 .banner03 .banner:nth-child(1){
- background: url(/img/banner/banner07.jpg) no-repeat center center/cover;
+ background: url(img/banner/banner07.jpg) no-repeat center center/cover;
 }
 .banner03 .banner:nth-child(2){
- background: url(/img/banner/banner04.jpg) no-repeat center center/cover;
+ background: url(img/banner/banner04.jpg) no-repeat center center/cover;
 }
 .banner03 .banner:nth-child(3){
- background: url(/img/banner/banner18.jpg) no-repeat center center/cover;
+ background: url(img/banner/banner18.jpg) no-repeat center center/cover;
 }
 /* ============== Newsletters section =============== */
 .newsletters{
