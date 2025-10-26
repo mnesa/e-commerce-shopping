@@ -150,9 +150,10 @@
 }
 
 /* =========== banner01 section ======== */
-.banner01{
-    background: url("/e-commerce-shopping/img/banner/banner02.jpg") no-repeat center center/cover;
+.banner01 {
+    background: url("../img/banner/banner02.jpg") no-repeat center center/cover;
 }
+
 .banner01 .content{
     color: var(--white-color);
     text-transform: capitalize;
