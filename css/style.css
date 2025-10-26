@@ -1,0 +1,465 @@
+/* index CSS */
+/* ============== header ================ */
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-color);
+    height: 80px;
+    box-shadow: var(--shadow-box);
+    z-index: 999;
+}
+.header .container.flex{
+    justify-content: space-between;
+}
+.logo{
+    font-family: var(--font-family-logo);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+}
+.logo i{
+ font-size: 1.5rem;
+}
+.logo span{
+    color: var(--primary-color);
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar a{
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--primary-color);
+}
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: var(--primary-color);
+    transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.navbar a:hover::after,
+.navbar a.active::after{
+    width: 70%;
+}
+.menu-btn {
+      display: none;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+
+/* ============= hero section ============= */
+.hero{
+ background-image: url(/img/hero4.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 100vh;
+ width: 100%;
+}
+.hero .container{
+    height: 100%;
+}
+.hero span{
+    color: var(--primary-color);
+}
+/* =========== Features ============== */
+.features .card{
+    display: flex;
+    flex-direction: column;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    max-width: 170px;
+}
+.features .btn-feature{
+    background-color: #d4bec3;
+    color: var(--green-color);
+    padding-block: 0.3rem;
+    padding-inline: 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 5px;
+   text-align: center;
+   margin-block-start: 1.2rem;
+}
+.features .card:nth-child(2) .btn-feature{
+    background-color: #b4caa6;
+}
+.features .card:nth-child(3) .btn-feature{
+    background-color: #b5c9ce;
+}
+.features .card:nth-child(4) .btn-feature{
+    background-color: #adb7d4;
+}
+.features .card:nth-child(5) .btn-feature{
+    background-color: #d3bfd4;
+}
+.features .card:nth-child(6) .btn-feature{
+    background-color: #d9d3c8;
+}
+/* ================ product =============== */
+.products .card{
+ position: relative;
+ border: 1px solid var(--border-color);
+ border-radius: 10px;
+ padding-block: 0.8rem;
+ padding-inline: 0.8rem;
+}
+.products .card:hover{
+    box-shadow: var(--shadow) ;
+}
+.products .card img{
+    border-radius: 10px;
+    margin-block-end: 0.8rem;
+}
+.products .card i{
+    color: #efcc22;
+    font-size: 0.9rem;
+}
+.products .card h5{
+    color: var(--primary-color);
+}
+.products .card .cart-icon i{
+    color: var(--primary-color);
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    padding-block-start: 10px;
+}
+
+/* =========== banner01 section ======== */
+.banner01{
+    background: url(/img/banner/banner02.jpg) no-repeat center center/cover;
+}
+.banner01 .content{
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+.banner01 span{
+    color: var(--red-color);
+}
+/* ============== banner02 section ============= */
+.banner02 .banner {
+    background: url(/img/banner/banner0217.jpg) no-repeat center center/cover;
+}
+.banner02 .banner:nth-child(2){
+    background: url(/img/banner/banner10.jpg) no-repeat center center/cover;
+}
+.banner02 .banner:hover .btn{
+    background: var(--primary-color);
+}
+.banner02 .banner p {
+color: var(--white-color);
+font-weight: 500;
+}
+/* ============== banner03 section ============== */
+.banner03 h5{
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+.banner03 h3{
+    text-transform: uppercase;
+}
+.banner03 .banner:nth-child(1){
+ background: url(/img/banner/banner07.jpg) no-repeat center center/cover;
+}
+.banner03 .banner:nth-child(2){
+ background: url(/img/banner/banner04.jpg) no-repeat center center/cover;
+}
+.banner03 .banner:nth-child(3){
+ background: url(/img/banner/banner18.jpg) no-repeat center center/cover;
+}
+/* ============== Newsletters section =============== */
+.newsletters{
+    background:#031e43;
+    color: var(--white-color);
+}
+.newsletters form{
+display: flex;
+width: 40%;
+}
+.newsletters form input{
+ height: 3rem;
+ width: 100%;
+ padding-inline: 1rem;
+ outline: 0;
+ border: 0;
+ border-radius: 5px;
+ border-top-right-radius: 0;
+ border-bottom-right-radius:0;
+}
+.newsletters form button{
+    border: 0;
+    margin-block: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
+}
+
+/* =========== footer =============== */
+.footer {
+    color: var(--color2);
+    line-height: 1.6;
+    text-transform: capitalize;
+}
+.footer .cards.grid{
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 0.8rem;
+}
+.footer h5{
+display: inline-block;
+color: var(--color);
+}
+.footer h4{
+    color: var(--color);
+    margin-block: 0.5rem;
+}
+.footer i{
+    color: var(--color2);
+}
+.footer .card a{
+    color: var(--color2);
+    text-transform: capitalize;
+}
+.footer .card:nth-child(4) a img{
+    display: inline-block;
+    border: 1px solid var(--primary-color);
+    margin-block: 1rem;
+    border-radius: 5px;
+}
+
+.footer .content {
+    text-transform: none;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    padding-block: 1.5rem;
+}
+
+
+/* ========== other Pages CSS ============ */
+.page-header{
+    text-align: center;
+    color: var(--white-color);
+}
+.page-header p{
+ font-weight: 500;
+ color: var(--white-color);
+}
+
+/* ============== shop page ======== */
+.shop-hero{
+    background: url(/img/banner/banner01.jpg) no-repeat center center/cover;
+}
+/* =========== blog page ============ */
+.blog-page{
+    background: url(/img/banner/banner19.jpg) no-repeat center center/cover;
+}
+.blog .card{
+    position: relative;
+    padding-block-end: 4.5rem;
+}
+.blog .blog-img{
+    width: 50%;
+    position: relative;
+}
+.blog .blog-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ .blog .blog-details{
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    width: 50%;
+ }
+ .blog .blog-details *{
+    margin-block-end: 0.7rem;
+ }
+ .blog .blog-details a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+ }
+ .blog .blog-details a:hover{
+    color: var(--primary-color);
+ }
+ .blog .blog-details a::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 155px;
+    width: 50px;
+    height: 2px;
+    background: var(--color);
+ }
+ 
+.blog .blog-details a:hover::after{
+    background-color: var(--primary-color);
+}
+.blog .card h2{
+  position: absolute;
+  top: -70px;
+  left: 15px;
+  font-size: 5rem;
+  color: var(--light-color);
+  z-index: -9;
+}
+/* ================= about page ================ */
+.about-page{
+    background: url(/img/about/banner.png) no-repeat center center/cover;
+}
+.about .content.flex{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: var(--light-color);
+  padding-block: 0.5rem;
+  margin-block-start: 1rem;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  color: var(--color);
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+/* ==== app section ==== */
+.app .content{
+    text-align: center;
+}
+.app .content video{
+    border-radius: 10px;
+}
+.app span{
+    color: var(--primary-color);
+}
+
+/* ============ contact page ============== */
+.contact-page{
+    background: url(/img/about/banner.png) no-repeat center center/cover;
+}
+.contact h5{
+     margin-block-start: 1rem;
+}
+.contact li{
+    margin-block-start: 1rem;
+    color: var(--color2);
+}
+
+/* contact-form */
+.contact-form .container.flex form{
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+    width: 50%;
+}
+
+.contact-form form input,
+.contact-form form textarea{
+ width: 100%;
+ margin-block: 0.6rem;
+ padding-block: 0.4rem;
+ padding-inline: 0.4rem;
+ font-family: var(--font-family-base);
+ border: 2px solid var(--border-color);
+}
+.contact-form form button{
+    border: 0;
+    width: 100%;
+}
+.contact-form small{
+    color: var(--red-color);
+}
+.contact-form #success{
+    color: var(--green-color);
+    font-weight: bold;
+    padding-block-start: 1.2rem;
+}
+/*============== cart page ================*/
+ .table {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th{
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  td {
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .table img{
+    width: 100px;
+  }
+  .table td:nth-child(2){
+    width: 100px;
+  }
+  .table td:nth-child(3){
+    width: 250px;
+  }
+  .table td:nth-child(5) input{
+    width: 50px;
+    padding: 5px;
+  }
+  /*=========== cart-total section ======== */
+
+  .cart-total table{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid var(--border-color);
+    margin-block: 1rem 0.5rem;
+  }
+  .cart-total table td{
+    border: 1px solid var(--border-color);
+    width: 50%;
+  }
+  .cart-total button{
+    border: 0;
+    transition: none;
+  }
+
+  

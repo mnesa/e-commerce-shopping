@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1); */
+:root{
+    --primary-color:#c94c4c;
+    --light-color:#e3e6f3;
+    --color:#1a1a1a;
+    --color2:#949494;
+    --white-color:#faffff;
+    --border-color: #cce7d0;
+    --red-color: #ef3636;
+    --green-color:#315e5b;
+    --shadow-box: 0 5px 10px #5f58583b;
+    --shadow: 5px 5px 10px #1a1a1a50;
+    --font-family-base: "Work Sans", sans-serif;
+    --font-family-logo:"Moon Dance", cursive;
+    --border-radius: 5px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* *{
+  outline: 1px solid red;
+} */
+
+/* Body default */
+body {
+  font-family: var(--font-family-base);
+  line-height: 1.4;
+  color: var(--color);
+  background-color: var(--white-color);
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  list-style: none;
+}
+
+/* Links */
+a {
+  color: var(--color);
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* a:hover{
+  color: var(--primary-color);
+} */
+/* header */
+h1{
+  font-size: clamp(1.8rem, 6vw, 3rem);
+}
+h2{
+ font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+h3{
+  font-size: clamp(1.2rem, 4vw, 2rem);
+}
+h4{
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+h5{
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+}
+p{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color2);
+}
+
+/* Images */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* button */
+.btn{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding-block: 0.5rem;
+    padding-inline: 0.7rem;
+    margin-block-start: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 500;
+    border-radius: 0.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 2s;
+}
+.btn:hover{
+    background-color: #eb9779;
+}
+.btn-white{
+    background-color: var(--white-color);
+    color: var(--color);
+}
+.btn-transparent{
+ background: transparent;
+ border: 1px solid var(--white-color);
+ border-radius: 0;
+}
+.btn-white:hover,
+.btn-transparent:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: 0;
+}
+
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1200px; 
+  margin: 0 auto;    
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-d-col{
+  flex-direction: column;
+}
+.justify-con-start{
+  justify-content: flex-start;
+}
+.justify-con-between{
+  justify-content: space-between;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.grid{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 1rem;
+}
+.banner{
+   padding-block: 1rem;
+    padding-inline: 1.5rem;
+    color: var(--white-color);
+    height: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* margin & padding */
+.my-3{
+  margin-block: 3rem;
+}
+.py-2{
+  padding-block: 2rem;
+}
+.py-3{
+  padding-block: 3rem;
+}
+
+
+/* other */
+.text-align-c{
+  text-align: center;
+}
+.transform{
+  text-transform: capitalize;
+}
